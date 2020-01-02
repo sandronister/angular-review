@@ -1,0 +1,10 @@
+<section *ngIf='student'>
+    Student:<a href="#" (click)='clicked()' >{{student.name}}</a>
+    <div *ngIf="student.isWaked">
+        Level:Is Waked {{student.timeWaked}} <button (click)='descr.focus()'>Focus</button><br/>
+        <textarea #descr></textarea>
+    </div>
+</section>
+<p *ngIf='!student'>
+    Sem dados para exibir
+</p>
